@@ -10,13 +10,14 @@
 #fi
 
 
-#yum install -y python-pip
-#pip install pip --upgrade
-#pip install nsnitro
+yum install -y python-pip
+pip install pip --upgrade
+pip install nsnitro
+yum install -y python-swiftclient
 
 echo Getting external service ...
 wget https://raw.githubusercontent.com/bh-public/cc-ss01/master/SS01.py -O SS01.py
 
 chmod +x SS01.py
 echo Running Python script ...
-python SS01.py
+python SS01.py 
