@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# Swiftstack service 
+# Swiftstack service
 
 
 #if [ -n "$gitTag" ]; then
 #    agentSendLogMessage  "Found gitTag parameter gitTag = ${gitTag}"
 #else
 #     agentSendLogMessage  "Didn't find custom parameter gitTag. Using gitTag=master"
-#     gitTag="netscalerext"
+#     gitTag="swiftstack container create"
 #fi
 
 
@@ -14,5 +14,9 @@
 #pip install pip --upgrade
 #pip install nsnitro
 
-#wget https://wsh17/cc-ss01/SS01.py
+echo Getting external service ...
+wget https://raw.githubusercontent.com/bh-public/cc-ss01/master/SS01.py -O SS01.py
+
+chmod +x SS01.py
+echo Running Python script ...
 python SS01.py
