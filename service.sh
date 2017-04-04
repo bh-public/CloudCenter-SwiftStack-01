@@ -11,7 +11,6 @@ fi
 
 yum install -y python-pip
 pip install pip --upgrade
-pip install nsnitro
 yum install -y python-swiftclient
 # Get the python code for the service
 echo Getting external service ...
