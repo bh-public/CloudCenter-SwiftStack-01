@@ -1,6 +1,10 @@
 #!/bin/bash
 # Swiftstack service
  agentSendLogMessage  "Starting Bash Script"
+ 
+echo "CLIQR_EXTERNAL_SERVICE_LOG_MSG_START"
+echo "Bash Script is run ..."
+echo "CLIQR_EXTERNAL_SERVICE_LOG_MSG_END"
 
 #if [ -n "$gitTag" ]; then
 #    agentSendLogMessage  "Found gitTag parameter gitTag = ${gitTag}"
@@ -8,7 +12,9 @@
 #     agentSendLogMessage  "Didn't find custom parameter gitTag. Using gitTag=master"
 #     gitTag="swiftstack container create"
 #fi
-agentSendLogMessage  "Installing pip"
+echo "CLIQR_EXTERNAL_SERVICE_LOG_MSG_START"
+echo "Installing PIP"
+echo "CLIQR_EXTERNAL_SERVICE_LOG_MSG_END"
 sudo yum install -y python-pip
 sudo pip install pip --upgrade
 #yum install -y python-swiftclient
