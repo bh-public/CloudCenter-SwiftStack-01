@@ -9,8 +9,8 @@
 #     gitTag="swiftstack container create"
 #fi
 
-yum install -y python-pip
-pip install pip --upgrade
+sudo yum install -y python-pip
+sudo pip install pip --upgrade
 #yum install -y python-swiftclient
 sudo pip install python-swiftclient
 # Get the python code for the service
