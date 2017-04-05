@@ -11,7 +11,7 @@ conn = swiftclient.Connection(
 
 
 # create a new container 
-container_name = 'container-for-dev'
+container_name = 'container-for-bill'
 print 'creating a container %s ...' % container_name
 conn.put_container(container_name)
 print 'done!'
